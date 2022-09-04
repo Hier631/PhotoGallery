@@ -33,9 +33,8 @@ public class TitleFragment extends Fragment {
                 .inflate(inflater, R.layout.fragment_title, container, false);
         navController = Navigation.findNavController(requireActivity(), R.id.frgNavHostFragment);
 
-        binding.btnLoadGallery.setOnClickListener(v -> {
-            navController.navigate(R.id.action_titleFragment_to_listPhotosFragment);
-        });
+        binding.btnLoadGallery.setOnClickListener(v ->
+                navController.navigate(R.id.action_titleFragment_to_listPhotosFragment));
 
         return binding.getRoot();
     }
