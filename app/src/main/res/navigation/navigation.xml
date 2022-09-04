@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navigation.xml">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation.xml"
+    app:startDestination="@id/titleFragment">
 
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.outlook.redspark277.photogallery.fragments.TitleFragment"
+        android:label="TitleFragment"
+        tools:layout="@layout/fragment_title" >
+        <action
+            android:id="@+id/action_titleFragment_to_listPhotosFragment"
+            app:destination="@id/listPhotosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listPhotosFragment"
+        android:name="com.outlook.redspark277.photogallery.fragments.ListPhotosFragment"
+        android:label="ListPhotosFragment"
+        android:layout="@layout/list_photos_fragment" >
+        <action
+            android:id="@+id/action_listPhotosFragment_to_photoFragment"
+            app:destination="@id/photoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/photoFragment"
+        android:name="com.outlook.redspark277.photogallery.fragments.PhotoFragment"
+        android:label="PhotoFragment"
+        android:layout="@layout/fragment_photo" >
+        <argument
+            android:name="photo"
+            app:argType="com.outlook.redspark277.photogallery.models.Photo" />
+    </fragment>
 </navigation>
