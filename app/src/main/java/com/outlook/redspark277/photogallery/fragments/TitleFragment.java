@@ -18,7 +18,7 @@ import com.outlook.redspark277.photogallery.databinding.FragmentTitleBinding;
 public class TitleFragment extends Fragment {
 
     FragmentTitleBinding binding;
-    NavController naVController;
+    NavController navController;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -31,10 +31,10 @@ public class TitleFragment extends Fragment {
                              @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding = DataBindingUtil
                 .inflate(inflater, R.layout.fragment_title, container, false);
-        naVController = Navigation.findNavController(requireActivity(), R.id.frgNavHostFragment);
+        navController = Navigation.findNavController(requireActivity(), R.id.frgNavHostFragment);
 
         binding.btnLoadGallery.setOnClickListener(v -> {
-
+            navController.navigate(R.id.action_titleFragment_to_listPhotosFragment);
         });
 
         return binding.getRoot();
