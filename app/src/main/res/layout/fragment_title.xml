@@ -32,6 +32,7 @@
             android:layout_height="0dp"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
+            android:layout_marginBottom="3dp"
             android:backgroundTint="@color/background"
             android:text="@string/load_gallery"
             android:textAppearance="@style/TextAppearance.AppCompat.Display3"
