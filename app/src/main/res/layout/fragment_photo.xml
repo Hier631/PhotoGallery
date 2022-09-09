@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#D32F2F"
+        android:background="@color/background"
         tools:context=".fragments.PhotoFragment">
 
         <com.github.chrisbanes.photoview.PhotoView
@@ -36,7 +36,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginBottom="16dp"
             android:text="@{@string/user(photo.user.username)}"
-            android:textColor="@color/white"
+            android:textColor="@color/text"
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/tvLikes"
             app:layout_constraintStart_toStartOf="parent" />
@@ -48,7 +48,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginBottom="16dp"
             android:text="@{@string/likes(photo.likes)}"
-            android:textColor="@color/white"
+            android:textColor="@color/text"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
