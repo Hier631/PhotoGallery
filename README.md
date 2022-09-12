@@ -7,9 +7,9 @@
 ## Screenshots
 
 <p align="center">
-    <img src="./screenshots/fragment_title.png" title="Title Fragment" alt="Image showing the title fragment" />
-    <img src="./screenshots/list_photos_fragment.png" title="List Photos Fragment" alt="Image showing the list photos fragment" />
-    <img src="./screenshots/fragment_photo" title="Photo Fragment" alt="Image showing the photo fragment" />
+    <img src="./screenshots/fragment_title.png" title="Title Fragment" alt="Image showing the title fragment" height="555" />
+    <img src="./screenshots/list_photos_fragment.png" title="List Photos Fragment" alt="Image showing the list photos fragment" height="555" />
+    <img src="./screenshots/fragment_photo.png" title="Photo Fragment" alt="Image showing the photo fragment" height="555" />
 </p>
 
 ## Contributing
