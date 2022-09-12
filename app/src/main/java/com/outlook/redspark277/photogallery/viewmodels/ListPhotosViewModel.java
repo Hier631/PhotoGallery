@@ -25,7 +25,7 @@ public class ListPhotosViewModel extends ViewModel {
 
     public void getResponse() {
         UnsplashApiAdapter.getApiService().getPhotos(
-                MainActivity.CLIENT_ID,
+                MainActivity.ACCESS_KEY,
                 "1",
                 "30",
                 "popular"

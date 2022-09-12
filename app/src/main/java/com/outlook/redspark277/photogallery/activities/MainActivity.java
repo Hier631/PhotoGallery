@@ -8,8 +8,8 @@ import com.outlook.redspark277.photogallery.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    // Use your own Unsplash Client ID.
-    public static String CLIENT_ID = "";
+    // Use your own Unsplash Access Key.
+    public static String ACCESS_KEY = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
