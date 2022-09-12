@@ -8,7 +8,7 @@ Photo Gallery is a demo application that shows how to create an image gallery us
 
 ## Motivation
 
-I created this application because I wanted to learn how to connect to a REST API using Retrofit
+I created this application because I wanted to learn how to connect to a REST API with Retrofit
 and then show its response using data binding inside an Android application.
 
 ## Screenshots
